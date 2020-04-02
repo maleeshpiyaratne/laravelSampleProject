@@ -48,6 +48,7 @@ Route::get('/index', 'PagesController@index');
 Route::get('/index02', 'PagesController@index2');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
-
 Route::get('/products', 'PagesController@products');
 Route::get('/contact', 'PagesController@contact');
+
+Route::resource('posts', 'PostsController');

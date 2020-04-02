@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    // public function index(){
+    //     return view('pages.index');
+    // }
+
     public function index(){
-        return view('pages.index');
+        $title = 'Welcome to Laravel!';
+        return view('pages.index', compact('title'));
     }
 
     public function index2(){
@@ -21,16 +26,17 @@ class PagesController extends Controller
     }
 
     public function services(){
-        $title = 'Services';
-        return view('pages.services')->with('title',$title);
+        $data = array (
+            'title' => 'Services',
+            'services' => ['Web Design', 'Programming', 'SEO']
+        );
+        
+        return view('pages.services')->with($data);
     }
 
     public function products(){
-        $data = array(
-            'title' => 'Products',
-            'services' => ['Web Design', 'Programming', 'SEO']
-        );
-        return view('pages.products')->with($data);
+        $title = 'Products';
+        return view('pages.products')->with('title', $title);
     }
 
     public function contact(){
