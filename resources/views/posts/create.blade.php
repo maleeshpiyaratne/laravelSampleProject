@@ -10,9 +10,8 @@
 
         <div class="form-group">
             {{Form::label('body','Body')}}
-            {{Form::textarea('body', '', ['class' => 'form-control', 'placeholder' => 'Body Text'])}}
+            {{Form::textarea('body', '', ['id' => 'editor1', 'class' => 'form-control', 'placeholder' => 'Body Text'])}}
         </div>
         {{Form::submit('submit', ['class' => 'btn btn-primary'])}}
     {!! Form::close() !!}
-
 @endsection

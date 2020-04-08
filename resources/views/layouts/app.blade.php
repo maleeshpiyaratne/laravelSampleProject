@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{asset('css/app.css')}}"/>
+        <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
         <title>{{config('app.name','LSAPP')}}</title>
     </head>
     <body>
@@ -12,5 +13,8 @@
             @include('inc.messages')
             @yield('content')
         </div>
+        <script>
+            CKEDITOR.replace( 'editor1' );
+    </script>
     </body>
 </html>
