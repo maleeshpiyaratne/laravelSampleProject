@@ -7,10 +7,9 @@
         <title>{{config('app.name','LSAPP')}}</title>
     </head>
     <body>
-        <div>
-            @include('inc.navbar')
-        </div>
+        <div>@include('inc.navbar')</div>
         <div class="container">
+            @include('inc.messages')
             @yield('content')
         </div>
     </body>
