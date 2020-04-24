@@ -52,3 +52,6 @@ Route::get('/products', 'PagesController@products');
 Route::get('/contact', 'PagesController@contact');
 
 Route::resource('posts', 'PostsController');
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');
