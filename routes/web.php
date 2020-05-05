@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index');
+
+// Route::get('/', function () {
+//     return view('pages.index');
+// });
 
 Route::get('/helloworld', function () {
     return 'Hello World';
@@ -44,8 +46,8 @@ Route::get('/users/{id}/{name}', function ($id, $name) {
 });
 
 /* Best practice would be to set the route to a controller which will navigate to a view*/
-Route::get('/index', 'PagesController@index');
-Route::get('/index02', 'PagesController@index2');
+//Route::get('/index', 'PagesController@index');
+//Route::get('/index02', 'PagesController@index2');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
 Route::get('/products', 'PagesController@products');
