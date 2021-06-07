@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="phpunit" default="setup" xmlns:if="ant:if" xmlns:unless="ant:unless">
+<project name="phpunit" default="setup">
     <target name="setup" depends="clean,install-dependencies"/>
     <target name="validate" depends="php-syntax-check,validate-composer-json,validate-phpunit-xsd"/>
 
