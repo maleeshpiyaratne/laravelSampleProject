@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://some-web-service.com/CustomUI" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsdLocal0="http://www.some-web-service.com/xml/ContactInformation" targetNamespace="http://some-web-service.com/CustomUI">
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:tns="http://some-web-service.com/CustomUI" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             targetNamespace="http://some-web-service.com/CustomUI">
     <message name="Contact_Information_Input">
         <part name="Contact_Id" type="xsd:string" />
     </message>
